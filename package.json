@@ -1,0 +1,27 @@
+{
+  "name": "trelloLike_back",
+  "version": "1.0.0",
+  "description": "**Outils** => [Mocodo](http://mocodo.wingi.net/) - définir les cardinalités en se posant les bonnes questions :   - _1 entité `A` est liée à combien d'entités `B` minimum ?_     - 0 ou 1   - _1 entité `A` est liée à combien d'entités `B` maximum ?_     - 1 ou n   - _1 entité `B` est liée à combien d'entités `A` minimum ?_     - 0 ou 1   - _1 entité `B` est liée à combien d'entités `A` maximum ?_     - 1 ou n",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pg": "^8.5.1",
+    "sequelize": "^6.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AstridDELCROS/trelloLike_back.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AstridDELCROS/trelloLike_back/issues"
+  },
+  "homepage": "https://github.com/AstridDELCROS/trelloLike_back#readme"
+}
