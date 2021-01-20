@@ -34,10 +34,18 @@
 
 ### Etape 4 : Installer les modules et créer fichiers de config + models
 
-$ npm init -y
-$ npm install dotenv express pg sequelize
+- $ npm init -y
+- $ npm install dotenv pg sequelize
 
 - dossier : app et app/models
     - puis dans models -> list.js, card.js, tag.js et index.js (pour gérer les associations)
 - fichiers : .env et app/database.js
 - puis fichier test.js pour vérifier qu'on récup bien les données des models
+
+### Etape 5 : Setup Express, modules API et premières routes (GET)
+
+- $ npm install express cors sanitize-html
+- config d'express dans index.js
+- création des controllers et méthodes getAll des listes, cartes et tags
+- puis config de router -> http://localhost:4000/lists
+
