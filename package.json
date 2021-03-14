@@ -7,9 +7,10 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "multer": "^1.4.2",
     "pg": "^8.5.1",
-    "sanitize-html": "^2.3.0",
-    "sequelize": "^6.4.0"
+    "sanitize-html": "^2.3.2",
+    "sequelize": "^6.5.0"
   },
   "devDependencies": {},
   "scripts": {
@@ -25,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/AstridDELCROS/trelloLike_back/issues"
   },
-  "homepage": "https://github.com/AstridDELCROS/trelloLike_back#readme"
+  "homepage": "https://github.com/AstridDELCROS/trelloLike_back#readme",
+  "directories": {
+    "doc": "docs"
+  }
 }

@@ -42,14 +42,14 @@ CREATE TABLE "card_has_tag"(
 
 INSERT INTO "list" ("id", "name", "position")
 VALUES
-(1, 'première liste', 1),
-(2, 'deuxième liste', 0)
+(1, 'première liste', 0),
+(2, 'deuxième liste', 1)
 ;
 
 INSERT INTO "card" ("id", "content", "color", "list_id", "position")
 VALUES
-(1, 'carte 1', '#e0e0e0', 1, 1),
-(2, 'carte 2', '#d3d3d3', 1, 0),
+(1, 'carte 1', '#e0e0e0', 1, 0),
+(2, 'carte 2', '#d3d3d3', 1, 1),
 (3, 'carte 3', '#b7b7b7', 2, 0);
 
 INSERT INTO "tag" ("id", "name", "color")

@@ -1,6 +1,8 @@
 require('dotenv').config();
 
 const express = require('express');
+// pour gérer l'envoi de 'Formdata' depuis le formulaire en front : middleware multer
+const multer = require('multer');
 const app = express();
 const router = require('./app/router');
 const port = process.env.PORT || 3000;
@@ -11,6 +13,10 @@ app.use(cors('*')); // ... à tous les domaines
 // (in the form of some data object) to the server and you are asking the server to accept or 
 // store that data (object), which is enclosed in the body (i.e. req.body) of that (POST) Request
 app.use(express.urlencoded({extended: true}));
+
+const bodyParser = multer();
+// none car on n'attend que des inputs et non des fichiers
+app.use(bodyParser.none());
 
 const sanitizeHtml = require('sanitize-html');
 // pour assainir les données envoyer par les utilisateurs
